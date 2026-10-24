@@ -25,6 +25,9 @@ A frontier Range task is a hosted app with two Harbor tasks on it.
 - `report` stays a separate score for the maintainer. It does not flip either role's reward.
 - A lab drop is the frozen tasks plus both trajectories. The license is priced in the thousands of dollars, and the figure is printed when a drop exists.
 - Humans play these same tasks after one witnessed pair exists. Their board stays separate from the agent board.
+- The same defender policy ships as a GitHub bot: one-line install, an API key that names the grant, and Slack, Teams, and email on each push. The first install is on our own public repos, after one witnessed pair.
+- A swarm is one identity with its members on the witness and one reward for the seat. The defender swarm is Watch, Sense, Confirm, Close, and Tell. Sense reads the product stream only: site, signup, login, and in-app activity. The product seat may be a swarm after a single member has a witness. System 0 runs one member on each seat.
+- The population in the twin is synthetic and keeps moving. Neither seat is told it was generated. The buyer contract still says the twin holds synthetic data. An enterprise engagement follows that customer's full funnel on the twin. Production tenants stay out.
 - A rubric enters an RL export only after the reward-loop check: a pass on the score still agrees with the oracle.
 - When the solver's verifier condition holds, the branch seals without a procedure. That seal is compiled into the watcher's Harbor task. The board entry is the detection task, after the fix window, as a synthetic replay or a post-fix variant.
 - The instruction and the rubric describe the outcome. They do not describe a method.

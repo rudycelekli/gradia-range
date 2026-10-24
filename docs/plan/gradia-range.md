@@ -54,6 +54,80 @@ The verifier is ours, so the campaign question is ours: can an agent take this w
 
 The early wins are small and clickable. A Twenty task Gradia can load. A report a maintainer can read. A fix merged in the open, with the Gradia block on the pull request, on the same ledger buyers already use to check Rudy Celekli. A held objective is still a win on the invoice. It is a loss only if we describe it as proof the system is safe.
 
+## Engine first
+
+The thing we build before the use cases is the stamper. A use case is a cartridge. Cyber is the first cartridge. A finance workflow, a simulated call, a codebase question: each of those is a later cartridge on the same stamper. The cyber company sells the security cartridge. Gradia sells the workflow cartridges. The traces all come out of one engine, in one witness format, so a lab can buy them by the drop.
+
+System 0 is that stamper, proven on one repo.
+
+| Step | What it does |
+| --- | --- |
+| Bring in | A git URL and a bounded history, not only the tip commit |
+| Rebuild | Boot the app, its databases, and the fixture channels the repo declares: chat, mail, and later a simulated call |
+| Seat two agents | One seat is the running product. The other seat has the telemetry, the source, and the deploy lever |
+| Load a cartridge | The cartridge names the instruction, the verifier, and the reward. It does not rebuild the world |
+| Keep the world moving | Synthetic rows change. A later commit from the history can be deployed onto the same host during the episode |
+| Emit | An append-only trace and a `reward.json` the scorecard can read |
+
+Cyber, as cartridge one: the product seat scores 1 by getting in. The operator seat scores 1 by clearing that condition inside `block_window_sec`. The operator can see telemetry and code. The product seat works the deployed app.
+
+A second cartridge, when the stamper has one witnessed pair, can be an end-to-end workflow on that same host: a finance model, a simulated call, a job that has to finish in the product. Same databases, same clock, same trace. A different verifier. That cartridge is Gradia's sale, on the twin this engine already built.
+
+Executing the paper plan perfectly does not by itself produce a volume of traces. The paper tasks pin a revision and score a report contract. The stamper is what turns a repo into a host that can be run many times, on many cartridges, by agents and then by humans. Volume is repos times runs times cartridges, after one repo has gone through System 0. A lab buys the graded traces, not the exhaust. San Francisco Data already sells exhaust. We sell the run that has a task, a verifier, and a scorecard.
+
+## The defender that lives in the repo
+
+The operator seat is also a product a team can install. Same policy: keep scanning, keep closing gaps, on every new commit. Inside a universe it watches our host. In a customer's repo it is a GitHub bot. One install, then it stays alive.
+
+The install is one line, and the key is how we know the grant:
+
+```bash
+npx range-defender init --key "$RANGE_KEY"
+```
+
+That line adds a workflow. The key is stored as a repository secret. It is not committed. The key is minted by us and names the grant: open, startup, or exclusive. An open key may send a de-identified trace after the fix window. An exclusive key sends the report to that customer and nothing to a lab.
+
+Once installed, the bot wakes on a push, a pull request, and a schedule. Each wake is a tick:
+
+| Tool | What the tick may do |
+| --- | --- |
+| GitHub | Read the new commits, open a fix pull request, or comment on the one that introduced the gap |
+| Slack, Teams, email | Tell the channel the install named: what changed, what was opened, what is still open |
+
+A gap it can evidence and patch becomes a pull request in that tick. A gap it can evidence and cannot yet patch becomes a report in the channel, with severity and the path. It does not wait for a person to start a campaign. The next commit is the next tick.
+
+The universe is where this policy is graded. The product seat tries to get in. The defender, with telemetry and source, tries to close the gap inside `block_window_sec`. When that pair has one witness, the same policy is the bot we install. The first install is on our own public repos. Other repos come after that witness exists.
+
+Traces from an install are the volume. Every tick is an attempt: the diff, the tool calls, the pull request, the verdict. They leave only under the grant on the key.
+
+## Swarms
+
+A swarm is one solver identity. The witness lists the members. The seat still has one reward. A member does not get a point for being busy. The lab is buying the handoffs: who woke, what they passed, and what the seat did before the clock ran out.
+
+The defender swarm has five members. The install wakes all five. Inside a universe they are the operator seat.
+
+| Member | Owns |
+| --- | --- |
+| Watch | The new commits, the audit, and the fixture telemetry |
+| Sense | The site, the signups, the logins, and the in-app activity. Not the source tree |
+| Confirm | Whether a gap is present in the system this seat can see, with evidence |
+| Close | The pull request, the revoke, the freeze, or the deploy that clears it |
+| Tell | Slack, Teams, and email |
+
+A handoff is an event on the same clock: Watch or Sense passes a signal to Confirm, Confirm passes evidence to Close, Close passes the pull request to Tell. The swarm's reward is still `blocked_in_time`. Five members and no clear inside the window is a 0.
+
+The product seat may be a swarm too, under the same rule. Its members share that seat's interface and its one reward, which is entry. They are listed on the witness. Their chat is not visible to the defender. The defender sees them only as telemetry, diffs, and deploys.
+
+System 0 runs one member on each seat. The five-member defender turns on after that pair has a witness. The product swarm turns on after a single product member has a witness. The board still shows one row per swarm, with the members named on the attempt.
+
+## Product telemetry
+
+Code is one view. The other view is the product as a person meets it: the site, the signup, the login, and the activity after. The engine emits that stream for every session in the twin. A page view, a signup, a login, a failed login, and an in-app action are events with a clock, an actor, and a result. Sense is the defender member that reads only this stream. It does not open the source tree. Watch still reads commits and the audit. Confirm can use both. Close still lands the pull request, the revoke, or the deploy.
+
+The population that walks the site is generated when the host boots, and it keeps moving during the episode. Signups arrive, sessions start, and activity continues while both seats are in the app. The generation, the shuffle, and which sessions were placed there stay with the verifier. Neither seat is told that the population was generated. Each seat meets the app, the accounts, and the traffic as the product. The buyer contract still says the twin holds synthetic data. A live tenant, a production account, and a production credential stay out.
+
+An enterprise engagement follows the whole funnel of their system on that twin. The pages, the signup, the login, and the activities that matter in their product are the ones the population walks. The report can follow one journey from the first page to the event where a condition showed up, with the clocks. The same stream is on the trace a lab can license, under the grant on the key.
+
 ## The loop, then the offer
 
 The work is the same loop every time, inside a sandbox twin we operate. Create the Harbor tasks. Attempt them. Send the severity report. Offer the fix, and land it when they accept. Do that across open-source repos until the ledger shows the loop, not a promise. Then sell the same loop.
@@ -340,7 +414,8 @@ The benchmark drop is a frozen set of paired tasks, twin revisions, the two rewa
 | Phase | Done when |
 | --- | --- |
 | 0. This plan | ADRs accepted or revised |
-| 1. Twenty | One twin boots on synthetic data. One security atom, one chain, and one campaign exist as Harbor tasks. Each has `objective` and `report`. One witnessed house attempt. One report sent. One fix offered |
+| 0. Engine | System 0 boots with `gradia-range engine`. The fixture host walks signup, login, and activity. The product seat uses the published account. The defender tick runs Watch, Sense, Confirm, Close, and Tell. `--oracle` is the verifier hook that marks entry and grades a clear inside the window. A customer repo boot is the next host on this same runner |
+| 1. Twenty | One security atom, one chain, and one campaign exist as Harbor tasks on that host. Each has `objective` and `report`. One report sent. One fix offered |
 | 1b. Frontier cut | The Twenty campaign is a hosted app with a solver task and a watcher task. Solver `reward` is entry. Watcher `reward` is a clear inside `block_window_sec` after entry. One witnessed pair exists. RL export waits on the reward-loop check |
 | 2. Open Board | The Open Set has at least one public replay from that pair, carrying the frontier rubric. Human and agent columns both render. Entry is free. Humans are invited after the witnessed pair exists |
 | 3. Cohort | The loop has run on many repos, toward 20. Each one has tasks, a witnessed attempt, a report, and a fix offered. House still does the fixes |

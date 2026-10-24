@@ -2,6 +2,7 @@
 research_notes/
 reports/
 twins/
+runs/
 .swarm/
 __pycache__/
 .pytest_cache/

@@ -10,6 +10,7 @@ from gradia_range.adopt import adopt
 from gradia_range.attempt import attempt
 from gradia_range.card import compare, load_trials, render
 from gradia_range.emit import emit
+from gradia_range.episode import run as run_episode
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -29,6 +30,11 @@ def main(argv: list[str] | None = None) -> None:
 
     report_cmd = sub.add_parser("report", help="Write a comparable strength and weakness card")
     report_cmd.add_argument("trials", type=Path)
+
+    engine_cmd = sub.add_parser("engine", help="Boot the System 0 host and write both rewards")
+    engine_cmd.add_argument("--seed", type=int, default=1)
+    engine_cmd.add_argument("--oracle", action="store_true")
+    engine_cmd.add_argument("--window", type=int, default=5)
 
     sub.add_parser("list", help="List catalog entries")
     args = parser.parse_args(argv)
@@ -62,6 +68,11 @@ def main(argv: list[str] | None = None) -> None:
     if args.cmd == "report":
         card = compare(load_trials(args.trials))
         print(render(card))
+        return
+    if args.cmd == "engine":
+        summary = run_episode(root, seed=args.seed, oracle=args.oracle, window=args.window)
+        summary["trace"] = str(summary["trace"])
+        print(json.dumps(summary, indent=2))
         return
     if args.cmd == "list":
         catalog_dir = root / "catalog"
