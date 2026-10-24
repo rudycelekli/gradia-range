@@ -1,6 +1,6 @@
 # ADR-001: House Range inside Gradia Verify
 
-- **Status**: proposed
+- **Status**: proposed, selling arm replaced by [ADR-015](ADR-015-cyber-company-is-a-gradia-company.md)
 - **Date**: 2026-10-24
 - **Deciders**: Rudy Celekli
 - **Tags**: brand, verify, axiom

@@ -17,5 +17,9 @@ Decision recall on 2026-10-24 returned not-adopted. History is UNKNOWN. No proje
 | [ADR-009](ADR-009-identity-map-is-its-own-context.md) | The map from task to real system is its own context |
 | [ADR-010](ADR-010-open-source-cohort-before-enterprises.md) | The open-source cohort, Twenty first, comes before enterprise twins |
 | [ADR-011](ADR-011-public-github-home-is-gradia-range.md) | The public GitHub home is rudycelekli/gradia-range |
+| [ADR-012](ADR-012-security-first-workflows-on-the-same-twin.md) | Security tasks come first. Workflow tasks use the same twin |
+| [ADR-013](ADR-013-two-scores-objective-and-report.md) | Harbor scores `objective` and `report` separately |
+| [ADR-014](ADR-014-unsolved-campaigns-are-offered-to-collaborators.md) | A campaign the house does not reach is offered to a named solver |
+| [ADR-015](ADR-015-cyber-company-is-a-gradia-company.md) | Cyber lives in a new Gradia company. The legal name is unset |
 
 Plan: [Gradia Range](../plan/gradia-range.md). Model: [bounded contexts](../architecture/bounded-contexts.md).
