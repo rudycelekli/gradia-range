@@ -8,6 +8,7 @@ from pathlib import Path
 
 from gradia_range.adopt import adopt
 from gradia_range.attempt import attempt
+from gradia_range.card import compare, load_trials, render
 from gradia_range.emit import emit
 
 
@@ -25,6 +26,9 @@ def main(argv: list[str] | None = None) -> None:
 
     attempt_cmd = sub.add_parser("attempt", help="Record the house report-contract attempt")
     attempt_cmd.add_argument("slug")
+
+    report_cmd = sub.add_parser("report", help="Write a comparable strength and weakness card")
+    report_cmd.add_argument("trials", type=Path)
 
     sub.add_parser("list", help="List catalog entries")
     args = parser.parse_args(argv)
@@ -54,6 +58,10 @@ def main(argv: list[str] | None = None) -> None:
         witness = attempt(catalog, root)
         reports = [item["scores"]["report"] for item in witness["results"]]
         print(json.dumps({"steps": len(reports), "report": min(reports), "fix_offered": witness["fix_offered"]}, indent=2))
+        return
+    if args.cmd == "report":
+        card = compare(load_trials(args.trials))
+        print(render(card))
         return
     if args.cmd == "list":
         catalog_dir = root / "catalog"
