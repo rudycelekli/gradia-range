@@ -1,0 +1,9 @@
+{
+  "slug": "system0",
+  "tasks": [
+    "journey",
+    "watch"
+  ],
+  "difficulty": "hard",
+  "reward": "1 only when every required check matches the host"
+}

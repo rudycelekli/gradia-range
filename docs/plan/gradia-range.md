@@ -414,7 +414,7 @@ The benchmark drop is a frozen set of paired tasks, twin revisions, the two rewa
 | Phase | Done when |
 | --- | --- |
 | 0. This plan | ADRs accepted or revised |
-| 0. Engine | System 0 boots with `gradia-range engine`. The fixture host walks signup, login, and activity. The product seat uses the published account. The defender tick runs Watch, Sense, Confirm, Close, and Tell. `--oracle` is the verifier hook that marks entry and grades a clear inside the window. A customer repo boot is the next host on this same runner |
+| 0. Engine | System 0 boots with `gradia-range engine`. `gradia-range tasks` emits two Harbor tasks from that host: `system0/journey` and `system0/watch`. The oracle for each scores 1. A missing row or a wrong clock scores 0. The task image is the booted host and the client. The grader holds the account generator. A customer repo boot is the next host on this same runner |
 | 1. Twenty | One security atom, one chain, and one campaign exist as Harbor tasks on that host. Each has `objective` and `report`. One report sent. One fix offered |
 | 1b. Frontier cut | The Twenty campaign is a hosted app with a solver task and a watcher task. Solver `reward` is entry. Watcher `reward` is a clear inside `block_window_sec` after entry. One witnessed pair exists. RL export waits on the reward-loop check |
 | 2. Open Board | The Open Set has at least one public replay from that pair, carrying the frontier rubric. Human and agent columns both render. Entry is free. Humans are invited after the witnessed pair exists |

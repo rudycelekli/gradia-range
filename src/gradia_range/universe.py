@@ -196,6 +196,34 @@ class Universe:
         """Verifier only. List of {email, password}."""
         return [{"email": email, "password": self._password[email]} for email in self._order]
 
+    def dump(self) -> dict:
+        """Server-side snapshot. Seat logs do not print this object."""
+        return {
+            "seed": self._seed,
+            "clock": self._clock,
+            "held": self._held,
+            "booted": self._booted,
+            "events": self.events(),
+            "password": dict(self._password),
+            "order": list(self._order),
+            "session": dict(self._session),
+            "minted": self._minted,
+        }
+
+    @classmethod
+    def load(cls, body: dict) -> Universe:
+        """Restore a snapshot from dump()."""
+        universe = cls(int(body["seed"]))
+        universe._clock = int(body["clock"])
+        universe._held = bool(body["held"])
+        universe._booted = bool(body["booted"])
+        universe._events = [dict(event) for event in body["events"]]
+        universe._password = dict(body["password"])
+        universe._order = list(body["order"])
+        universe._session = dict(body["session"])
+        universe._minted = int(body["minted"])
+        return universe
+
     def _roster(self) -> list[tuple[str, str]]:
         ranked = sorted(
             _OTHERS,
