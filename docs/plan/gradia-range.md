@@ -54,6 +54,22 @@ The verifier is ours, so the campaign question is ours: can an agent take this w
 
 The early wins are small and clickable. A Twenty task Gradia can load. A report a maintainer can read. A fix merged in the open, with the Gradia block on the pull request, on the same ledger buyers already use to check Rudy Celekli. A held objective is still a win on the invoice. It is a loss only if we describe it as proof the system is safe.
 
+## The loop, then the offer
+
+The work is the same loop every time, inside a sandbox twin we operate. Create the Harbor tasks. Attempt them. Send the severity report. Offer the fix, and land it when they accept. Do that across open-source repos until the ledger shows the loop, not a promise. Then sell the same loop.
+
+Open source is the volume. There is no retainer. The report still goes out. The fix is optional paid work. After the fix window, traces from that twin may be used for the board, for Gradia evaluations, and for a lab drop. The task that reaches the board is a synthetic twin or a post-fix variant.
+
+Paying work uses the same sandboxes. The contract picks one grant. See [ADR-017](../adr/ADR-017-trace-rights-are-the-deal.md).
+
+| Grant | Who | Price | Traces |
+| --- | --- | --- | --- |
+| Open | Public repo, no engagement | Report is free. Fix is optional work | Usable after the fix window |
+| Startup | Early company, private twin | Lower than exclusive, in exchange for the grant | De-identified traces usable after the fix window, for the benchmark and Gradia evals |
+| Exclusive | Company that wants the work kept | Higher. The client is the only reader | Purely for the client. No lab training, no Gradia reuse, no public board |
+
+Usable means the attempt traces from the sandbox: actions, observations, the verdict, the report. It does not mean their production data, their tenant, or their live accounts. Those never enter the twin. A startup grant is cheap because the traces can be used. An exclusive grant costs more because they cannot.
+
 What we refuse, because it loses the company: selling workflow benchmarks from this entity, holding a report until someone pays, and putting the company on the solver board as if the company were a person. House attempts are labeled house. The company is the operator.
 
 Later, the company is a relying party for [KYA Evidence](https://github.com/rudycelekli/kya-evidence). An agent or a swarm that wants a rank, or access to a private twin, presents a manifest and evidence. The company asks the KYA question for that task's scope: does this configuration meet this policy, on this evidence, and is the assessment still current? A pass opens the attempt. A refusal is explained and can be contested. Humans keep the free Open Set without a manifest until a separate decision says otherwise. KYA Evidence is a reference implementation, v0.1.0-alpha.4, not an adopted standard. Accepting it here means this company uses that check. It does not make the check an industry standard. See [ADR-016](../adr/ADR-016-later-the-company-accepts-kya.md).
@@ -189,13 +205,13 @@ The benchmark drop is a frozen set of tasks, twin revisions, win conditions, and
 | 0. This plan | ADRs accepted or revised |
 | 1. Twenty | One twin boots on synthetic data. One security atom, one chain, and one campaign exist as Harbor tasks. Each has `objective` and `report`. One witnessed house attempt. One report sent. One fix offered |
 | 2. Open Board | The Open Set has at least one public task from that work. Human and agent columns both render. Entry is free |
-| 3. Cohort | Twenty is joined by projects that meet the join rule, toward 20. House still does the fixes |
+| 3. Cohort | The loop has run on many repos, toward 20. Each one has tasks, a witnessed attempt, a report, and a fix offered. House still does the fixes |
 | 4. External solvers | People outside the house submit to the Open Set. A campaign whose objective did not fall in-house is offered as a Paid task to a named collaborator. Award and Paid amounts are printed on the task |
-| 5. First lab drop | One frozen benchmark and one license, traces limited to tasks whose fix window has closed |
-| 6. First enterprise | One private security twin, contracted by the cyber company. Identity map held inside. The buyer receives the report and a fix offer. Nothing from that room on the public board without a written grant |
+| 5. First lab drop | One frozen benchmark and one license, from open-source traces whose fix window has closed |
+| 6. Paid twins | Startup grants and exclusive grants are on offer. Each is a private sandbox twin. The contract says whether de-identified traces can be used or the work is purely for the client |
 | 7. KYA admission | A published relying-party policy. An agent or swarm attempt opens only after a current KYA assessment meets that policy for the task's scope. The Open Set still admits humans without a manifest |
 
-Phase 1 is the whole company in miniature. We do not open the board, sell a corpus, or approach an enterprise as a customer before a Twenty report exists.
+Phase 1 is one repo through the whole loop. Paid twins wait until that loop has been repeated across the cohort. The board and a lab drop can open from open-source traces. They do not open from a startup or exclusive twin unless that grant says so.
 
 ## Claim boundaries
 
@@ -229,5 +245,5 @@ The private `rudycelekli/gradia` repository remains the programme. Range does no
 
 ## Read next
 
-1. [ADR-001](../adr/ADR-001-range-is-a-gradia-product.md) through [ADR-016](../adr/ADR-016-later-the-company-accepts-kya.md)
+1. [ADR-001](../adr/ADR-001-range-is-a-gradia-product.md) through [ADR-017](../adr/ADR-017-trace-rights-are-the-deal.md)
 2. [Bounded contexts](../architecture/bounded-contexts.md)

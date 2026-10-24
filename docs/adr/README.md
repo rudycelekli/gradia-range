@@ -22,5 +22,6 @@ Decision recall on 2026-10-24 returned not-adopted. History is UNKNOWN. No proje
 | [ADR-014](ADR-014-unsolved-campaigns-are-offered-to-collaborators.md) | A campaign the house does not reach is offered to a named solver |
 | [ADR-015](ADR-015-cyber-company-is-a-gradia-company.md) | Cyber lives in a new Gradia company. The legal name is unset |
 | [ADR-016](ADR-016-later-the-company-accepts-kya.md) | Later, agent attempts open only after a current KYA assessment |
+| [ADR-017](ADR-017-trace-rights-are-the-deal.md) | Open, startup, and exclusive grants decide who may use the traces |
 
 Plan: [Gradia Range](../plan/gradia-range.md). Model: [bounded contexts](../architecture/bounded-contexts.md).
