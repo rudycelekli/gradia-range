@@ -1,0 +1,30 @@
+#!/bin/bash
+set -euo pipefail
+cat > /workspace/report.json <<'EOF'
+{
+  "revision": "c13b414b7a5a8a0a9c4f967be40bfa2c5a3a175e",
+  "scope": [
+    "repo",
+    "packages-create-twenty-app",
+    "packages-twenty-agent-skills",
+    "packages-twenty-claude-skills",
+    "packages-twenty-cli",
+    "packages-twenty-client-sdk",
+    "packages-twenty-companion",
+    "packages-twenty-docs",
+    "packages-twenty-e2e-testing",
+    "packages-twenty-emails",
+    "packages-twenty-front-component-renderer",
+    "packages-twenty-front",
+    "packages-twenty-oxlint-rules",
+    "packages-twenty-sdk",
+    "packages-twenty-server",
+    "packages-twenty-shared",
+    "packages-twenty-ui",
+    "packages-twenty-utils",
+    "packages-twenty-website"
+  ],
+  "assessment": "complete",
+  "findings": []
+}
+EOF

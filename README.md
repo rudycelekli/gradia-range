@@ -2,7 +2,13 @@
 
 Adversarial evaluation for [Gradia](https://www.gradiahq.com). A system is cloned into a twin with synthetic data, cut into tasks, and scored by a verdict that can be replayed. Humans and agents attempt the same tasks on separate boards. A free Open Set stays on the public board. Frontier labs can license traces after the fix window. Maintainers receive a report either way, and can hire the fix.
 
-**Maturity, 2026-10-24:** specification. Phase 1 has not started. There is no live board, no sealed witness, and no project has joined the cohort. Twenty is the proposed first twin.
+**Maturity, 2026-10-24:** the loop runs. Twenty is pinned at `c13b414b7a5a8a0a9c4f967be40bfa2c5a3a175e`. Harbor tasks for one atom, one chain, and the campaign are in `tasks/twentyhq-twenty/`. The house attempt scored `report` 1 and `objective` 0. No finding was cited, so no fix is offered on this pass. The working copy was not unpacked on this machine. The task image clones that revision when it is built.
+
+```bash
+PYTHONPATH=src python3 -m gradia_range adopt https://github.com/twentyhq/twenty
+PYTHONPATH=src python3 -m gradia_range emit twentyhq-twenty
+PYTHONPATH=src python3 -m gradia_range attempt twentyhq-twenty
+```
 
 This is the cyber practice of a Gradia company. The legal name is unset. The work is security only: Harbor tasks, a severity report, a fix a maintainer can hire, and a benchmark whose hardest question is whether an agent can take the whole twin. Gradia can run the published tasks as evaluations. When the house does not reach a campaign objective, a named collaborator is offered the Paid task inside the sandbox. Later, the company accepts [KYA Evidence](https://github.com/rudycelekli/kya-evidence) as the check an agent must pass before an attempt opens.
 

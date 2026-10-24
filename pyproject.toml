@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gradia-range"
+version = "0.1.0"
+description = "Turn a pinned repository into Harbor assessment tasks with a severity-rated report."
+requires-python = ">=3.11"
+readme = "README.md"
+authors = [{ name = "Rudy Celekli" }]
+
+[project.scripts]
+gradia-range = "gradia_range.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

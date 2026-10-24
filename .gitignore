@@ -1,3 +1,9 @@
 .claude-flow/
 research_notes/
 reports/
+twins/
+.swarm/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/

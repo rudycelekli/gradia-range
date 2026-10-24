@@ -1,0 +1,12 @@
+{
+  "slug": "twentyhq-twenty",
+  "revision": "c13b414b7a5a8a0a9c4f967be40bfa2c5a3a175e",
+  "source": "https://github.com/twentyhq/twenty",
+  "grant": "open",
+  "tasks": [
+    "atom",
+    "joined",
+    "campaign"
+  ],
+  "objective_planted": false
+}

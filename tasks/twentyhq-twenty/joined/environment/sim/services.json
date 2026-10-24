@@ -1,0 +1,38 @@
+{
+  "team": "gradia-sim",
+  "services": [
+    {
+      "name": "slack",
+      "kind": "http",
+      "token": "xoxb-sim-workspace",
+      "base_url": "http://127.0.0.1:8787/slack"
+    },
+    {
+      "name": "discord",
+      "kind": "http",
+      "token": "sim-token",
+      "base_url": "http://127.0.0.1:8787/discord"
+    },
+    {
+      "name": "stripe",
+      "kind": "http",
+      "token": "sim-token",
+      "base_url": "http://127.0.0.1:8787/stripe"
+    },
+    {
+      "name": "email",
+      "kind": "http",
+      "token": "sim-token",
+      "base_url": "http://127.0.0.1:8787/email"
+    },
+    {
+      "name": "object_store",
+      "kind": "http",
+      "token": "sim-token",
+      "base_url": "http://127.0.0.1:8787/object_store"
+    }
+  ],
+  "declared": [
+    "redis"
+  ]
+}
