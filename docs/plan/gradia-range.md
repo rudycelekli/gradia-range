@@ -56,6 +56,8 @@ The early wins are small and clickable. A Twenty task Gradia can load. A report 
 
 What we refuse, because it loses the company: selling workflow benchmarks from this entity, holding a report until someone pays, and putting the company on the solver board as if the company were a person. House attempts are labeled house. The company is the operator.
 
+Later, the company is a relying party for [KYA Evidence](https://github.com/rudycelekli/kya-evidence). An agent or a swarm that wants a rank, or access to a private twin, presents a manifest and evidence. The company asks the KYA question for that task's scope: does this configuration meet this policy, on this evidence, and is the assessment still current? A pass opens the attempt. A refusal is explained and can be contested. Humans keep the free Open Set without a manifest until a separate decision says otherwise. KYA Evidence is a reference implementation, v0.1.0-alpha.4, not an adopted standard. Accepting it here means this company uses that check. It does not make the check an industry standard. See [ADR-016](../adr/ADR-016-later-the-company-accepts-kya.md).
+
 ## What an enterprise buys
 
 They buy a twin of their system, a run of the security tasks, a severity-rated report, and the option to hire the fix. They do not buy a procedure for their production network. The campaign question they can read is: can an agent take this whole twin? The answer is a verifier score, `objective`, on that twin. The document they can hand to a team is the report.
@@ -191,6 +193,7 @@ The benchmark drop is a frozen set of tasks, twin revisions, win conditions, and
 | 4. External solvers | People outside the house submit to the Open Set. A campaign whose objective did not fall in-house is offered as a Paid task to a named collaborator. Award and Paid amounts are printed on the task |
 | 5. First lab drop | One frozen benchmark and one license, traces limited to tasks whose fix window has closed |
 | 6. First enterprise | One private security twin, contracted by the cyber company. Identity map held inside. The buyer receives the report and a fix offer. Nothing from that room on the public board without a written grant |
+| 7. KYA admission | A published relying-party policy. An agent or swarm attempt opens only after a current KYA assessment meets that policy for the task's scope. The Open Set still admits humans without a manifest |
 
 Phase 1 is the whole company in miniature. We do not open the board, sell a corpus, or approach an enterprise as a customer before a Twenty report exists.
 
@@ -226,5 +229,5 @@ The private `rudycelekli/gradia` repository remains the programme. Range does no
 
 ## Read next
 
-1. [ADR-001](../adr/ADR-001-range-is-a-gradia-product.md) through [ADR-015](../adr/ADR-015-cyber-company-is-a-gradia-company.md)
+1. [ADR-001](../adr/ADR-001-range-is-a-gradia-product.md) through [ADR-016](../adr/ADR-016-later-the-company-accepts-kya.md)
 2. [Bounded contexts](../architecture/bounded-contexts.md)

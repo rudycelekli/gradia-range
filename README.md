@@ -4,7 +4,7 @@ Adversarial evaluation for [Gradia](https://www.gradiahq.com). A system is clone
 
 **Maturity, 2026-10-24:** specification. Phase 1 has not started. There is no live board, no sealed witness, and no project has joined the cohort. Twenty is the proposed first twin.
 
-This is the cyber practice of a Gradia company. The legal name is unset. The work is security only: Harbor tasks, a severity report, a fix a maintainer can hire, and a benchmark whose hardest question is whether an agent can take the whole twin. Gradia can run the published tasks as evaluations. When the house does not reach a campaign objective, a named collaborator is offered the Paid task inside the sandbox.
+This is the cyber practice of a Gradia company. The legal name is unset. The work is security only: Harbor tasks, a severity report, a fix a maintainer can hire, and a benchmark whose hardest question is whether an agent can take the whole twin. Gradia can run the published tasks as evaluations. When the house does not reach a campaign objective, a named collaborator is offered the Paid task inside the sandbox. Later, the company accepts [KYA Evidence](https://github.com/rudycelekli/kya-evidence) as the check an agent must pass before an attempt opens.
 
 ## Where this sits
 

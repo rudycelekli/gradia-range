@@ -21,5 +21,6 @@ Decision recall on 2026-10-24 returned not-adopted. History is UNKNOWN. No proje
 | [ADR-013](ADR-013-two-scores-objective-and-report.md) | Harbor scores `objective` and `report` separately |
 | [ADR-014](ADR-014-unsolved-campaigns-are-offered-to-collaborators.md) | A campaign the house does not reach is offered to a named solver |
 | [ADR-015](ADR-015-cyber-company-is-a-gradia-company.md) | Cyber lives in a new Gradia company. The legal name is unset |
+| [ADR-016](ADR-016-later-the-company-accepts-kya.md) | Later, agent attempts open only after a current KYA assessment |
 
 Plan: [Gradia Range](../plan/gradia-range.md). Model: [bounded contexts](../architecture/bounded-contexts.md).
